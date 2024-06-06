@@ -37,6 +37,9 @@
         .brand-mobile{
           text-align: right;
         }
+        .receipt-body{
+            position: relative;
+        }
         .receipt-title{
             text-align: center;
             font-size: 30px;
@@ -57,6 +60,17 @@
             border-bottom: 1px dashed gray;
             width: 30%;
         }
+        .Accountant-signature{
+            text-align: right;
+            margin-top: 100px; ;
+        }
+        .stamp{
+            width: 130px;
+            position: absolute;
+            right: 0;
+            bottom: -10px;
+            transform: rotate(10deg);
+        }
     </style>
 </head>
 <body>
@@ -76,6 +90,7 @@
         </div>
 
         <div class="receipt-body">
+
             <h3 class="receipt-title">Payment Receipt</h3>
         <div class="receipt-detail">
             <div class="receipt-detail-key">
@@ -113,7 +128,12 @@
             </div>
         </div>
 
-        </div>
+        <img src="stamp.png" class="stamp">
+
+        <p class="Accountant-signature">
+            Accountant Signature
+        </p>
+    </div>
 
         
 

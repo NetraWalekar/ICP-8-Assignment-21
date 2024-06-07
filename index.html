@@ -78,6 +78,31 @@
             font-size: 20px;
             background-color: #ffca39;
         }
+
+        @media screen and (max-width : 600px) { 
+            .Receipt-container{
+                flex-shrink: 1;
+            }
+            .receipt-footer{
+                padding: 10px 0;
+            }
+        }
+
+        @media  screen and (min-width : 601px) and (max-width : 879px) {
+            .Receipt-container{
+                flex-grow: 1;
+            }
+            .receipt-footer{
+                padding: auto;
+            }
+            
+        }
+
+        @media  screen and (min-width : 880px) and (max-width : 1200px) {
+            .Receipt-container{
+                flex-grow: 1;
+            }
+        }
     </style>
 </head>
 <body>
